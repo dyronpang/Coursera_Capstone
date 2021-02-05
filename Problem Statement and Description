@@ -3,7 +3,7 @@
 Harambe is a Singapore Citizen and a newly wed who wants to buy a residental property. He is unsure of the location of his new home to be, with his main restraint being cost.
 He also wants to have a home which is near to a gym and other amenities, as he likes to exercise.
 
-To do so Harambe wants to analyze data for prices per square feet on residental areas in singapore, as well as utilize the foursquare API to explore the locations
+To do so Harambe wants to analyze data for rental prices per square feet on residental areas in singapore, as well as utilize the foursquare API to explore the locations
 and make an informed choice based on data.
 The intended audience would be interested buyers of residental property; situated near gyms and have a budget, such as harambe.
 
@@ -11,13 +11,15 @@ The intended audience would be interested buyers of residental property; situate
 
 Data of 'Rentals of Non-Landed Residential Buildings, Quarterly' is obtained from the Singapore Land Authority (https://data.gov.sg/dataset/rentals-of-non-landed-residential-buildings-with-at-least-10-rental-contracts-signed-in-1q2016)
 In it contains the summary statistics (median, 25th percentile, 75th percentile and number of rental contracts) of major non-landed private residential projects
-with at least 10 rental contracts signed in a quarter.
+with at least 10 rental contracts signed in a quarter. 
+This will be our main data set, and gives us the feature price for the different districts.
 
 Data of Gyms in Singapore is obtained from Singapore Health Promotion Board (https://data.gov.sg/dataset/gymssg)
-In it contains the GEOjson data for the gyms in singapore.
+In it contains the GEOjson data for the gyms in singapore. The geodata can serve as points to form clusters in our machine learning model.
 
 Postal codes and districts in Singapore are obtained from Wikipedia (https://en.wikipedia.org/wiki/Postal_codes_in_Singapore)
-The data from the Html file can be converted into a Dataframe.
+The data from the Html file can be converted into a Dataframe, the district codes as well as descriptions will be extracted from the table, this table can be appended
+onto the rental contracts, providing the neighbourhood names apart from the district codes.
 
 By clustering and visualizing the cluster areas of gyms and then filtering the areas based on cost per square foot, Harambe can narrow down his search scope.
 Afterwards, he will utilize the foursquare API to look for 
