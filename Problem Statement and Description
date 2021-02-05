@@ -13,4 +13,7 @@ In it contains the summary statistics (median, 25th percentile, 75th percentile 
 with at least 10 rental contracts signed in a quarter.
 
 By filtering the areas based on cost, Harambe can narrow down his search scope.
-
+Afterwards, he will utilize the foursquare API to look for 
+1. trending places near the places
+2. parks and desired amenities near the places
+3. read tips on the places found
