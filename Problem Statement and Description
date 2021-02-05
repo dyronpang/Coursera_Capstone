@@ -1,19 +1,25 @@
-A description of the problem and a discussion of the background. (15 marks)
+*A description of the problem and a discussion of the background. (15 marks)
 
 Harambe is a Singapore Citizen and a newly wed who wants to buy a residental property. He is unsure of the location of his new home to be, with his main restraint being cost.
-He also wants to have a home which is near to a park and some amenities, as he likes to exercise and loves nature.
+He also wants to have a home which is near to a gym and other amenities, as he likes to exercise.
 
 To do so Harambe wants to analyze data for prices per square feet on residental areas in singapore, as well as utilize the foursquare API to explore the locations
 and make an informed choice based on data.
-The intended audience would be interested buyers of residental property such as harambe.
+The intended audience would be interested buyers of residental property; situated near gyms and have a budget, such as harambe.
 
-A description of the data and how it will be used to solve the problem. (15 marks)
+*A description of the data and how it will be used to solve the problem. (15 marks)
 
 Data of 'Rentals of Non-Landed Residential Buildings, Quarterly' is obtained from the Singapore Land Authority (https://data.gov.sg/dataset/rentals-of-non-landed-residential-buildings-with-at-least-10-rental-contracts-signed-in-1q2016)
 In it contains the summary statistics (median, 25th percentile, 75th percentile and number of rental contracts) of major non-landed private residential projects
 with at least 10 rental contracts signed in a quarter.
 
-By filtering the areas based on cost per square foot, Harambe can narrow down his search scope.
+Data of Gyms in Singapore is obtained from Singapore Health Promotion Board (https://data.gov.sg/dataset/gymssg)
+In it contains the GEOjson data for the gyms in singapore.
+
+Postal codes and districts in Singapore are obtained from Wikipedia (https://en.wikipedia.org/wiki/Postal_codes_in_Singapore)
+The data from the Html file can be converted into a Dataframe.
+
+By clustering and visualizing the cluster areas of gyms and then filtering the areas based on cost per square foot, Harambe can narrow down his search scope.
 Afterwards, he will utilize the foursquare API to look for 
 1. trending places near the places
 2. parks and desired amenities near the places
